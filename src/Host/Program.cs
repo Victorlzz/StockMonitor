@@ -1,6 +1,6 @@
 ﻿using System;
 
-namespace Host
+namespace Stock.Host
 {
     class Program
     {
