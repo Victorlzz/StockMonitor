@@ -3,8 +3,26 @@
   <PropertyGroup>
     <OutputType>Exe</OutputType>
     <TargetFramework>net5.0</TargetFramework>
-    <RootNamespace>Stock.Host</RootNamespace>
-    <AssemblyName>Stock.Host</AssemblyName>
+    <RootNamespace>GenericHost</RootNamespace>
+    <AssemblyName>GenericHost</AssemblyName>
   </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="Microsoft.Extensions.Hosting" Version="5.0.0" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <ProjectReference Include="..\Gateway\Locator\GatewayLocator\GatewayLocator.csproj" />
+    <ProjectReference Include="..\Infrastructure\StockLocator\StockLocator.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <None Update="hostsettings.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+    <None Update="hostsettings.Production.json">
+      <CopyToOutputDirectory>Always</CopyToOutputDirectory>
+    </None>
+  </ItemGroup>
 
 </Project>

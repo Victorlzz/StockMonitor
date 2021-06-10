@@ -1,0 +1,13 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<AssemblyName>Stock.DT</AssemblyName>
+		<RootNamespace>Stock.DT</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+		<Folder Include="Stock\" />
+	</ItemGroup>
+
+</Project>

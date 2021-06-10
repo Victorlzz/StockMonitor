@@ -1,0 +1,19 @@
+<Project Sdk="Microsoft.NET.Sdk">
+
+	<PropertyGroup>
+		<TargetFramework>netstandard2.1</TargetFramework>
+		<AssemblyName>Stock.Infrastructure.StockLocator</AssemblyName>
+		<RootNamespace>Stock.Infrastructure.StockLocator</RootNamespace>
+	</PropertyGroup>
+
+	<ItemGroup>
+	  <ProjectReference Include="..\..\Services\StockService\StockService.csproj" />
+	  <ProjectReference Include="..\..\Stock\Contract\StockContract\StockContract.csproj" />
+	</ItemGroup>
+
+	<ItemGroup>
+		<PackageReference Include="Microsoft.Extensions.DependencyInjection.Abstractions" Version="5.0.0" />
+	</ItemGroup>
+
+</Project>
+
